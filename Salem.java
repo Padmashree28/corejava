@@ -1,7 +1,7 @@
-package US;
+package TN;
 
 public class Salem {
-	public void whichpackage() {
-		System.out.println("salem in us");
+public void whichpackage() {
+	System.out.println("salem in tamilnadu");
 }
 }
