@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Login Form</title>
+<script>
+function validateUser()
+{
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+if(x=="" || y==""){
+alert("Please enter data");
+return false;
+}
+else{
+alert("Data id getting submitted..");
+return true;
+}
+}
+</script>
+<body bgcolor="pink">
+
+<h1 style="color:red"><center>Login Form</center></h1>
+<hr/>
+<form action="http://localhost/MyServlet" OnSubmit="return validateUser()">
+<center>Enter Username:<input type="text" name="nm1" id="t1" placeholder="Enter your username"></center><br>
+<center>Enter Password:<input type="password" name="pw1" id="t2" placeholder="Enter your password"></center><br>
+<center>Enter Age     :<input type="number" min="1" max="99"/></center><br>
+<center>Enter your DOB:<input type="date" ></center><br>
+<center><input type="submit"></center> 
+<center><input type="reset"></center>
+</form>
+</body>
+</head>
+</html>
+
+
+
