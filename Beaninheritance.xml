@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="helloworld" class="com.deloitte.HelloWorld">
+    <property name="msg1" value="Hello World One!!"></property>
+    <property name="msg2" value="Hello World Two!!"></property>
+    </bean>
+     <bean id="helloindia" class="com.deloitte.HelloIndia" parent ="helloworld">
+     <property name="msg1" value="Hello india!!"></property>
+    <property name="msg3" value="Welcome India!!"></property>
+    </bean>
+    </beans>
+    
